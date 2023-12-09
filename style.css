@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: linear-gradient(95deg, #7071E8, #3D30A2);
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 600px;
+    height: fit-content;
+    margin: 50px auto 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.quiz {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.questiontopic {
+    padding: 10px 0px 10px 10px;
+    border-bottom: 1px solid;
+}
+
+.question {
+    padding: 10px 0px 10px 10px;
+}
+
+.optionsection {
+    width: 100%;
+    padding: 5px 10px 10px 10px;
+}
+
+.option {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #fff;
+    border: 1px solid;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.correct {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #C5E898;
+    border: 1px solid;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.wrong {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #FCAEAE;
+    border: 1px solid;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:hover:not([disabled]) {
+    background-color: #191919;
+    color: #fff;
+    cursor: pointer;
+}
+
+.option:hover:disabled {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    /* background-color: #fff; */
+    border: 1px solid;
+    transition: all 0.3s;
+    text-align: left;
+}
+.option:disabled{
+    cursor:no-drop;
+}
+.nextbutton {
+    width: 100%;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+}
+
+.next {
+    width: 15%;
+    background-color: #fff;
+    color: linear-gradient(95deg, #34B3F1, #00ABB3);
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.next:hover {
+    width: 15%;
+    background: #F73D93;
+    color: #fff;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
